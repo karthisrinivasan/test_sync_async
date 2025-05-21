@@ -1,0 +1,35 @@
+/* -- declarations -- */
+import std::gates;
+import std::cells;
+
+export defproc tst (bool? clk; bool? in[8]; bool! out[8]);
+
+export defproc tst (bool? clk; bool? in[8]; bool! out[8])
+{
+  spec { hazard(*) }
+
+  std::gates::sigbuf<8> b; b.in=clk;
+   /*--- types ---*/
+   std::cells::DFFPOSX1 _5_;
+   std::cells::DFFPOSX1 _0_;
+   std::cells::DFFPOSX1 _1_;
+   std::cells::DFFPOSX1 _6_;
+   std::cells::DFFPOSX1 _4_;
+   std::cells::DFFPOSX1 _2_;
+   std::cells::DFFPOSX1 _3_;
+   std::cells::DFFPOSX1 _7_;
+  //  /*--- connections ---*/
+   _0_(.CLK=b.out[0], .D=in[0], .Q=out[0]);
+   _1_(.CLK=b.out[1], .D=in[1], .Q=out[1]);
+   _2_(.CLK=b.out[2], .D=in[2], .Q=out[2]);
+   _3_(.CLK=b.out[3], .D=in[3], .Q=out[3]);
+   _4_(.CLK=b.out[4], .D=in[4], .Q=out[4]);
+   _5_(.CLK=b.out[5], .D=in[5], .Q=out[5]);
+   _6_(.CLK=b.out[6], .D=in[6], .Q=out[6]);
+   _7_(.CLK=b.out[7], .D=in[7], .Q=out[7]);
+}
+
+defproc test ()
+{
+  tst x[100];
+}

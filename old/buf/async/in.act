@@ -1,0 +1,8 @@
+
+defproc tst (chan?(int<8>) L; chan!(int<8>) R)
+{
+    int<8> x;
+    chp {
+        *[ L?x ; R!x ]
+    }
+}

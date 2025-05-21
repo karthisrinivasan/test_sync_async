@@ -1,0 +1,20 @@
+read_verilog buf.v
+read_verilog sink.v
+read_verilog source.v
+read_verilog tb.v
+
+# hierarchy -check -top tb_buffer_with_source_sink
+
+synth
+dfflibmap -liberty osu018_stdcells.lib
+abc -liberty osu018_stdcells.lib
+opt_clean
+
+# stat -liberty cmos_cells.lib
+
+# http://vlsiarch.ecen.okstate.edu/flows/MOSIS_SCMOS/latest/cadence/lib/tsmc025/signalstorm/osu025_stdcells.lib
+# dfflibmap -liberty osu025_stdcells.lib
+# abc -liberty osu025_stdcells.lib;;
+
+write_verilog -noattr -simple-lhs -nohex  yosys_out.v
+# write_verilog yosys_out.v

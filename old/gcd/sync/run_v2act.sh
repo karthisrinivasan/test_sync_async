@@ -1,0 +1,1 @@
+v2act -C bool -o synth.act -l ${ACT_HOME}/act/std/cells.act -n std::cells out.v

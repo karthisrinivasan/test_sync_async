@@ -1,0 +1,117 @@
+
+function g1(int<8> i, xr, yr; int<1> s) : int<8>
+{
+    chp {
+        [s=1 -> self:=i
+        []s=0 & xr>yr -> self:=xr-yr
+        []s=0 & xr<=yr -> self:=yr-xr
+        ]
+    }
+}
+
+// function g2(chan(int<8>) I; int<8> xr, yr; int<1> s) : int<8>
+// {
+//     chp {
+//         [s=1 -> self:=I
+//         []s=0 & xr>yr -> self:=xr-yr
+//         []s=0 & xr<=yr -> self:=yr-xr
+//         ]
+//     }
+// }
+
+defproc tst (chan?(int<8>) A, B; chan?(int<1>) S; chan!(int<8>) C; chan!(int<1>) D)
+{
+    int<8> x,y;
+    int<8> xr,yr;
+    int<1> s,d;
+    chp {
+        xr:=0; yr:=0;
+        *[ 
+            // A?x , B?y , S?s; 
+            S?s; 
+
+            // xr := g1(x,xr,yr,s);
+            // yr := g1(y,xr,yr,s);
+            
+            // yr := g1(B,xr,yr,s);
+            // xr := g1(A,xr,yr,s);
+
+            xr := s=0x1 ? A : s=0x0&xr>yr ? xr-yr : s=0x0&xr<=yr ? yr-xr : 0 ;
+            yr := s=0x1 ? B : s=0x0&xr>yr ? xr-yr : s=0x0&xr<=yr ? yr-xr : 0 ;
+
+            A? ; B? ;
+
+            d := int(xr=yr);
+
+            C!(d=1 ? xr : 0), D!d
+        ]
+    }
+}
+
+template <pint W>
+defproc sink (chan(int<W>) C)
+{
+    chp {
+        *[ C? ]
+    }
+}
+
+template <pint W, v>
+defproc source (chan(int<W>) C)
+{
+    chp {
+        *[ C!v ]
+    }
+}
+
+defproc source_once (chan(int<1>) C)
+{
+    int<2> x;
+    chp {
+        x:=3; *[ C!(int(x=3)) ; x:=x-1 ]
+    }
+}
+
+defproc cyc_test ()
+{
+    tst x;
+    sink<1> sn1(x.D);
+    sink<8> sn2(x.C);
+    source<8,45> sr1(x.A);
+    source<8,18> sr2(x.B);
+    source_once sr3(x.S);
+}
+
+/*
+    template <pint W>
+    defproc snk (chan?(int<W>) C)
+    {
+        int<W> x;
+        chp {
+            *[ C?x; log("value:", x) ]
+        }
+    }
+
+    defproc test ()
+    {
+        tst x;
+        snk<8> s1 (x.C);
+        snk<1> s2 (x.D);
+        chp {
+            x.A!40, x.B!15, x.S!1 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 ;
+            x.A!15, x.B!5, x.S!0 
+        }
+
+    }
+*/

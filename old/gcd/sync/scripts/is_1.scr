@@ -1,0 +1,8 @@
+act:read "synth.act"
+act:expand
+act:top test
+
+ckt:cell-map
+ckt:cell-save "cells.act"
+
+

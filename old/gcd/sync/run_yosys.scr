@@ -1,0 +1,14 @@
+read_verilog in.v
+
+synth
+dfflibmap -liberty ../osu018_stdcells.lib
+abc -liberty ../osu018_stdcells.lib
+opt_clean
+
+# stat -liberty cmos_cells.lib
+
+# http://vlsiarch.ecen.okstate.edu/flows/MOSIS_SCMOS/latest/cadence/lib/tsmc025/signalstorm/osu025_stdcells.lib
+# dfflibmap -liberty osu025_stdcells.lib
+# abc -liberty osu025_stdcells.lib;;
+
+write_verilog -noattr -nohex out.v

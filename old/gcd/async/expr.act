@@ -1,0 +1,490 @@
+namespace syn {
+
+export namespace expr {
+
+/* -- declarations -- */
+export defproc blk_0i1e10i0e23ga23mi8I10i0e23ka32mi8I1i0qqq_1_8_8_8_8tmp (bool? in__3_50_6; bool? in__3_51_6; bool? in__3_52_6; bool? in__3_53_6; bool? in__3_54_6; bool? in__3_55_6; bool? in__3_56_6; bool? in__3_57_6; bool? in__2_50_6; bool? in__2_51_6; bool? in__2_52_6; bool? in__2_53_6; bool? in__2_54_6; bool? in__2_55_6; bool? in__2_56_6; bool? in__2_57_6; bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6);
+export defproc blk_0i1e10i0e23ga23mi8I10i0e23ka32mi8I1i0qqq_1_8_8_8_8 (bool? in_3[8]; bool? in_2[8]; bool? in_1[8]; bool? in_0[1]; bool! out[8]);
+
+export defproc blk_0i1e10i0e23ga23mi8I10i0e23ka32mi8I1i0qqq_1_8_8_8_8tmp (bool? in__3_50_6; bool? in__3_51_6; bool? in__3_52_6; bool? in__3_53_6; bool? in__3_54_6; bool? in__3_55_6; bool? in__3_56_6; bool? in__3_57_6; bool? in__2_50_6; bool? in__2_51_6; bool? in__2_52_6; bool? in__2_53_6; bool? in__2_54_6; bool? in__2_55_6; bool? in__2_56_6; bool? in__2_57_6; bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6)
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   std::cells::OAI21X1 g79;
+   bool new_n100;
+   bool new_n95;
+   bool new_n108;
+   bool new_n104;
+   bool new_n77;
+   std::cells::OR2X1 g86;
+   std::cells::OAI22X1 g67;
+   std::cells::INVX4 g00;
+   bool new_n42;
+   bool new_n52;
+   std::cells::NOR2X1 g10;
+   std::cells::OAI22X1 g52;
+   std::cells::OAI21X1 g29;
+   bool new_n98;
+   bool new_n101;
+   std::cells::NAND2X1 g83;
+   bool new_n91;
+   std::cells::OAI22X1 g59;
+   bool new_n84;
+   bool new_n62;
+   bool new_n60;
+   std::cells::AOI21X1 g71;
+   bool new_n103;
+   std::cells::XNOR2X1 g80;
+   bool new_n88;
+   std::cells::INVX1 g08;
+   bool new_n118;
+   bool new_n106;
+   bool new_n35;
+   std::cells::NOR2X1 g31;
+   std::cells::NAND2X1 g84;
+   std::cells::OAI21X1 g14;
+   bool new_n85;
+   std::cells::AOI21X1 g88;
+   bool new_n63;
+   std::cells::OAI22X1 g26;
+   std::cells::AOI22X1 g30;
+   std::cells::OR2X2 g23;
+   std::cells::XNOR2X1 g48;
+   std::cells::NOR2X1 g35;
+   std::cells::INVX2 g62;
+   std::cells::INVX2 g05;
+   bool new_n112;
+   bool new_n47;
+   bool new_n38;
+   std::cells::OAI21X1 g55;
+   std::cells::NAND3X1 g38;
+   std::cells::NAND2X1 g17;
+   bool new_n67;
+   std::cells::XNOR2X1 g77;
+   std::cells::NOR2X1 g49;
+   std::cells::OAI21X1 g70;
+   std::cells::AOI21X1 g82;
+   bool new_n75;
+   bool new_n73;
+   bool new_n79;
+   std::cells::XNOR2X1 g63;
+   std::cells::INVX2 g04;
+   bool new_n46;
+   bool new_n39;
+   std::cells::AOI21X1 g75;
+   bool new_n93;
+   std::cells::NAND2X1 g27;
+   bool new_n90;
+   bool new_n61;
+   bool new_n56;
+   bool new_n51;
+   std::cells::NOR2X1 g64;
+   std::cells::AND2X1 g11;
+   std::cells::INVX2 g03;
+   bool new_n41;
+   std::cells::OAI22X1 g87;
+   std::cells::XNOR2X1 g41;
+   std::cells::NOR2X1 g18;
+   std::cells::OAI22X1 g45;
+   std::cells::AOI21X1 g39;
+   bool new_n66;
+   std::cells::AOI21X1 g42;
+   bool new_n86;
+   bool new_n114;
+   std::cells::AOI21X1 g60;
+   std::cells::AOI21X1 g53;
+   std::cells::INVX2 g07;
+   bool new_n45;
+   std::cells::OAI22X1 g74;
+   std::cells::XNOR2X1 g58;
+   bool new_n117;
+   bool new_n105;
+   bool new_n82;
+   std::cells::OAI21X1 g65;
+   std::cells::INVX8 g02;
+   bool new_n40;
+   std::cells::NAND2X1 g19;
+   bool new_n70;
+   std::cells::XNOR2X1 g57;
+   std::cells::AOI21X1 g56;
+   std::cells::NAND3X1 g44;
+   bool new_n76;
+   std::cells::NAND3X1 g28;
+   bool new_n83;
+   bool new_n96;
+   bool new_n53;
+   bool new_n115;
+   std::cells::AOI21X1 g68;
+   bool new_n55;
+   std::cells::OR2X1 g15;
+   bool new_n113;
+   std::cells::XNOR2X1 g72;
+   bool new_n110;
+   std::cells::NOR2X1 g25;
+   bool new_n99;
+   std::cells::OAI21X1 g50;
+   std::cells::XNOR2X1 g73;
+   std::cells::INVX8 g09;
+   bool new_n37;
+   bool new_n34;
+   bool new_n65;
+   bool new_n58;
+   std::cells::NOR2X1 g78;
+   std::cells::XNOR2X1 g66;
+   std::cells::NAND2X1 g16;
+   std::cells::INVX2 g01;
+   bool new_n43;
+   bool new_n97;
+   std::cells::XNOR2X1 g43;
+   std::cells::OAI21X1 g32;
+   std::cells::NAND2X1 g24;
+   std::cells::AOI21X1 g46;
+   bool new_n121;
+   bool new_n50;
+   std::cells::NAND2X1 g22;
+   std::cells::XOR2X1 g69;
+   std::cells::OR2X2 g20;
+   std::cells::AOI22X1 g34;
+   bool new_n72;
+   std::cells::OAI21X1 g33;
+   std::cells::XNOR2X1 g85;
+   std::cells::OAI22X1 g36;
+   bool new_n69;
+   std::cells::OAI21X1 g13;
+   std::cells::NAND2X1 g61;
+   std::cells::INVX4 g06;
+   bool new_n44;
+   bool new_n71;
+   bool new_n57;
+   std::cells::XNOR2X1 g47;
+   bool new_n120;
+   std::cells::XNOR2X1 g76;
+   bool new_n119;
+   bool new_n107;
+   bool new_n74;
+   bool new_n111;
+   bool new_n49;
+   bool new_n36;
+   std::cells::NAND2X1 g12;
+   bool new_n81;
+   bool new_n59;
+   std::cells::OAI22X1 g81;
+   std::cells::XNOR2X1 g51;
+   bool new_n89;
+   std::cells::XOR2X1 g40;
+   bool new_n54;
+   bool new_n78;
+   bool new_n64;
+   std::cells::XOR2X1 g54;
+   bool new_n92;
+   std::cells::NOR2X1 g21;
+   std::cells::NAND2X1 g37;
+   bool new_n68;
+   /*--- connections ---*/
+   g00(.A=in__3_56_6, .Y=new_n34);
+   g01(.A=in__3_57_6, .Y=new_n35);
+   g02(.A=in__2_50_6, .Y=new_n36);
+   g03(.A=in__2_51_6, .Y=new_n37);
+   g04(.A=in__2_52_6, .Y=new_n38);
+   g05(.A=in__2_53_6, .Y=new_n39);
+   g06(.A=in__2_54_6, .Y=new_n40);
+   g07(.A=in__2_55_6, .Y=new_n41);
+   g08(.A=in__1_50_6, .Y=new_n42);
+   g09(.A=in__0_50_6, .Y=new_n43);
+   g10(.A=in__3_50_6, .B=new_n36, .Y=new_n44);
+   g11(.A=in__3_50_6, .B=new_n36, .Y=new_n45);
+   g12(.A=in__3_50_6, .B=new_n36, .Y=new_n46);
+   g13(.A=new_n44, .B=new_n45, .C=new_n43, .Y=new_n47);
+   g14(.A=new_n42, .B=new_n43, .C=new_n47, .Y=out_50_6);
+   g15(.A=new_n35, .B=in__2_57_6, .Y=new_n49);
+   g16(.A=new_n35, .B=in__2_57_6, .Y=new_n50);
+   g17(.A=new_n34, .B=in__2_56_6, .Y=new_n51);
+   g18(.A=in__3_55_6, .B=new_n41, .Y=new_n52);
+   g19(.A=in__3_54_6, .B=new_n40, .Y=new_n53);
+   g20(.A=in__3_54_6, .B=new_n40, .Y=new_n54);
+   g21(.A=in__3_53_6, .B=new_n39, .Y=new_n55);
+   g22(.A=in__3_52_6, .B=new_n38, .Y=new_n56);
+   g23(.A=in__3_52_6, .B=new_n38, .Y=new_n57);
+   g24(.A=in__3_51_6, .B=new_n37, .Y=new_n58);
+   g25(.A=in__3_51_6, .B=new_n37, .Y=new_n59);
+   g26(.A=in__3_50_6, .B=new_n36, .C=new_n37, .D=in__3_51_6, .Y=new_n60);
+   g27(.A=new_n58, .B=new_n60, .Y=new_n61);
+   g28(.A=new_n56, .B=new_n58, .C=new_n60, .Y=new_n62);
+   g29(.A=in__3_52_6, .B=new_n38, .C=new_n62, .Y=new_n63);
+   g30(.A=in__3_53_6, .B=new_n39, .C=new_n57, .D=new_n62, .Y=new_n64);
+   g31(.A=new_n55, .B=new_n64, .Y=new_n65);
+   g32(.A=new_n55, .B=new_n64, .C=new_n53, .Y=new_n66);
+   g33(.A=in__3_54_6, .B=new_n40, .C=new_n66, .Y=new_n67);
+   g34(.A=in__3_55_6, .B=new_n41, .C=new_n54, .D=new_n66, .Y=new_n68);
+   g35(.A=new_n52, .B=new_n68, .Y=new_n69);
+   g36(.A=new_n34, .B=in__2_56_6, .C=new_n52, .D=new_n68, .Y=new_n70);
+   g37(.A=new_n51, .B=new_n70, .Y=new_n71);
+   g38(.A=new_n50, .B=new_n51, .C=new_n70, .Y=new_n72);
+   g39(.A=new_n49, .B=new_n72, .C=in__0_50_6, .Y=new_n73);
+   g40(.A=in__3_51_6, .B=in__2_51_6, .Y=new_n74);
+   g41(.A=new_n44, .B=new_n74, .Y=new_n75);
+   g42(.A=in__3_50_6, .B=new_n36, .C=new_n74, .Y=new_n76);
+   g43(.A=new_n46, .B=new_n74, .Y=new_n77);
+   g44(.A=new_n43, .B=new_n49, .C=new_n72, .Y=new_n78);
+   g45(.A=in__1_51_6, .B=new_n43, .C=new_n77, .D=new_n78, .Y=new_n79);
+   g46(.A=new_n73, .B=new_n75, .C=new_n79, .Y=out_51_6);
+   g47(.A=in__3_52_6, .B=in__2_52_6, .Y=new_n81);
+   g48(.A=new_n61, .B=new_n81, .Y=new_n82);
+   g49(.A=new_n59, .B=new_n76, .Y=new_n83);
+   g50(.A=new_n59, .B=new_n76, .C=new_n81, .Y=new_n84);
+   g51(.A=new_n81, .B=new_n83, .Y=new_n85);
+   g52(.A=in__1_52_6, .B=new_n43, .C=new_n78, .D=new_n85, .Y=new_n86);
+   g53(.A=new_n73, .B=new_n82, .C=new_n86, .Y=out_52_6);
+   g54(.A=in__3_53_6, .B=in__2_53_6, .Y=new_n88);
+   g55(.A=in__3_52_6, .B=new_n38, .C=new_n84, .Y=new_n89);
+   g56(.A=new_n57, .B=new_n84, .C=new_n88, .Y=new_n90);
+   g57(.A=new_n88, .B=new_n89, .Y=new_n91);
+   g58(.A=new_n63, .B=new_n88, .Y=new_n92);
+   g59(.A=in__1_53_6, .B=new_n43, .C=new_n78, .D=new_n91, .Y=new_n93);
+   g60(.A=new_n73, .B=new_n92, .C=new_n93, .Y=out_53_6);
+   g61(.A=new_n53, .B=new_n54, .Y=new_n95);
+   g62(.A=new_n95, .Y=new_n96);
+   g63(.A=new_n65, .B=new_n96, .Y=new_n97);
+   g64(.A=new_n55, .B=new_n90, .Y=new_n98);
+   g65(.A=new_n55, .B=new_n90, .C=new_n96, .Y=new_n99);
+   g66(.A=new_n96, .B=new_n98, .Y=new_n100);
+   g67(.A=in__1_54_6, .B=new_n43, .C=new_n78, .D=new_n100, .Y=new_n101);
+   g68(.A=new_n73, .B=new_n97, .C=new_n101, .Y=out_54_6);
+   g69(.A=in__3_55_6, .B=in__2_55_6, .Y=new_n103);
+   g70(.A=in__3_54_6, .B=new_n40, .C=new_n99, .Y=new_n104);
+   g71(.A=new_n54, .B=new_n99, .C=new_n103, .Y=new_n105);
+   g72(.A=new_n103, .B=new_n104, .Y=new_n106);
+   g73(.A=new_n67, .B=new_n103, .Y=new_n107);
+   g74(.A=in__1_55_6, .B=new_n43, .C=new_n78, .D=new_n106, .Y=new_n108);
+   g75(.A=new_n73, .B=new_n107, .C=new_n108, .Y=out_55_6);
+   g76(.A=in__3_56_6, .B=in__2_56_6, .Y=new_n110);
+   g77(.A=new_n69, .B=new_n110, .Y=new_n111);
+   g78(.A=new_n52, .B=new_n105, .Y=new_n112);
+   g79(.A=new_n52, .B=new_n105, .C=new_n110, .Y=new_n113);
+   g80(.A=new_n110, .B=new_n112, .Y=new_n114);
+   g81(.A=in__1_56_6, .B=new_n43, .C=new_n78, .D=new_n114, .Y=new_n115);
+   g82(.A=new_n73, .B=new_n111, .C=new_n115, .Y=out_56_6);
+   g83(.A=new_n49, .B=new_n50, .Y=new_n117);
+   g84(.A=new_n51, .B=new_n113, .Y=new_n118);
+   g85(.A=new_n117, .B=new_n118, .Y=new_n119);
+   g86(.A=new_n49, .B=new_n71, .Y=new_n120);
+   g87(.A=in__1_57_6, .B=new_n43, .C=new_n78, .D=new_n119, .Y=new_n121);
+   g88(.A=new_n73, .B=new_n120, .C=new_n121, .Y=out_57_6);
+}
+
+export defproc blk_0i1e10i0e23ga23mi8I10i0e23ka32mi8I1i0qqq_1_8_8_8_8 (bool? in_3[8]; bool? in_2[8]; bool? in_1[8]; bool? in_0[1]; bool! out[8])
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   bool in__2_57_6;
+   bool in__1_51_6;
+   bool in__1_57_6;
+   bool in__1_55_6;
+   bool in__2_56_6;
+   blk_0i1e10i0e23ga23mi8I10i0e23ka32mi8I1i0qqq_1_8_8_8_8tmp _passthru_;
+   bool in__3_56_6;
+   bool in__1_52_6;
+   bool in__3_54_6;
+   bool out_56_6;
+   bool in__3_53_6;
+   bool in__2_54_6;
+   bool in__2_53_6;
+   bool in__1_54_6;
+   bool in__1_50_6;
+   bool out_55_6;
+   bool out_50_6;
+   bool in__2_51_6;
+   bool out_57_6;
+   bool in__3_55_6;
+   bool in__0_50_6;
+   bool out_53_6;
+   bool out_51_6;
+   bool in__1_56_6;
+   bool in__2_50_6;
+   bool in__2_52_6;
+   bool out_54_6;
+   bool in__1_53_6;
+   bool in__2_55_6;
+   bool in__3_51_6;
+   bool in__3_57_6;
+   bool in__3_50_6;
+   bool in__3_52_6;
+   bool out_52_6;
+   /*--- connections ---*/
+   _passthru_(.in__3_50_6=in_3[0], .in__3_51_6=in_3[1], .in__3_52_6=in_3[2], .in__3_53_6=in_3[3], .in__3_54_6=in_3[4], .in__3_55_6=in_3[5], .in__3_56_6=in_3[6], .in__3_57_6=in_3[7], .in__2_50_6=in_2[0], .in__2_51_6=in_2[1], .in__2_52_6=in_2[2], .in__2_53_6=in_2[3], .in__2_54_6=in_2[4], .in__2_55_6=in_2[5], .in__2_56_6=in_2[6], .in__2_57_6=in_2[7], .in__1_50_6=in_1[0], .in__1_51_6=in_1[1], .in__1_52_6=in_1[2], .in__1_53_6=in_1[3], .in__1_54_6=in_1[4], .in__1_55_6=in_1[5], .in__1_56_6=in_1[6], .in__1_57_6=in_1[7], .in__0_50_6=in_0[0], .out_50_6=out[0], .out_51_6=out[1], .out_52_6=out[2], .out_53_6=out[3], .out_54_6=out[4], .out_55_6=out[5], .out_56_6=out[6], .out_57_6=out[7]);
+}
+
+/* -- declarations -- */
+export defproc blk_01eI0_8_8_1tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool? in__0_51_6; bool? in__0_52_6; bool? in__0_53_6; bool? in__0_54_6; bool? in__0_55_6; bool? in__0_56_6; bool? in__0_57_6; bool! out_50_6);
+export defproc blk_01eI0_8_8_1 (bool? in_1[8]; bool? in_0[8]; bool! out[1]);
+
+export defproc blk_01eI0_8_8_1tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool? in__0_51_6; bool? in__0_52_6; bool? in__0_53_6; bool? in__0_54_6; bool? in__0_55_6; bool? in__0_56_6; bool? in__0_57_6; bool! out_50_6)
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   bool new_n23;
+   std::cells::INVX1 g00;
+   std::cells::XOR2X1 g10;
+   bool new_n27;
+   bool new_n31;
+   bool new_n18;
+   std::cells::OAI22X1 g08;
+   std::cells::XNOR2X1 g14;
+   bool new_n30;
+   bool new_n19;
+   std::cells::XNOR2X1 g05;
+   std::cells::AOI22X1 g04;
+   std::cells::XOR2X1 g11;
+   std::cells::INVX2 g03;
+   bool new_n25;
+   std::cells::XOR2X1 g07;
+   bool new_n26;
+   std::cells::INVX1 g02;
+   bool new_n32;
+   std::cells::NAND3X1 g15;
+   bool new_n28;
+   bool new_n29;
+   std::cells::OR2X1 g09;
+   bool new_n22;
+   std::cells::NOR3X1 g16;
+   std::cells::INVX1 g01;
+   bool new_n20;
+   bool new_n33;
+   std::cells::AOI22X1 g13;
+   std::cells::NAND2X1 g06;
+   bool new_n21;
+   std::cells::NOR2X1 g12;
+   bool new_n24;
+   /*--- connections ---*/
+   g00(.A=in__1_52_6, .Y=new_n18);
+   g01(.A=in__1_56_6, .Y=new_n19);
+   g02(.A=in__0_52_6, .Y=new_n20);
+   g03(.A=in__0_55_6, .Y=new_n21);
+   g04(.A=new_n18, .B=in__0_52_6, .C=in__0_56_6, .D=new_n19, .Y=new_n22);
+   g05(.A=in__1_54_6, .B=in__0_54_6, .Y=new_n23);
+   g06(.A=new_n22, .B=new_n23, .Y=new_n24);
+   g07(.A=in__1_50_6, .B=in__0_50_6, .Y=new_n25);
+   g08(.A=in__1_55_6, .B=new_n21, .C=in__0_56_6, .D=new_n19, .Y=new_n26);
+   g09(.A=new_n25, .B=new_n26, .Y=new_n27);
+   g10(.A=in__1_53_6, .B=in__0_53_6, .Y=new_n28);
+   g11(.A=in__1_51_6, .B=in__0_51_6, .Y=new_n29);
+   g12(.A=new_n28, .B=new_n29, .Y=new_n30);
+   g13(.A=in__1_52_6, .B=new_n20, .C=new_n21, .D=in__1_55_6, .Y=new_n31);
+   g14(.A=in__1_57_6, .B=in__0_57_6, .Y=new_n32);
+   g15(.A=new_n30, .B=new_n31, .C=new_n32, .Y=new_n33);
+   g16(.A=new_n24, .B=new_n27, .C=new_n33, .Y=out_50_6);
+}
+
+export defproc blk_01eI0_8_8_1 (bool? in_1[8]; bool? in_0[8]; bool! out[1])
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   bool in__1_51_6;
+   bool in__0_55_6;
+   bool in__0_53_6;
+   bool in__1_57_6;
+   bool in__1_55_6;
+   blk_01eI0_8_8_1tmp _passthru_;
+   bool in__0_57_6;
+   bool in__1_52_6;
+   bool in__0_52_6;
+   bool in__1_54_6;
+   bool in__1_50_6;
+   bool out_50_6;
+   bool in__0_51_6;
+   bool in__0_50_6;
+   bool in__0_54_6;
+   bool in__1_56_6;
+   bool in__0_56_6;
+   bool in__1_53_6;
+   /*--- connections ---*/
+   _passthru_(.in__1_50_6=in_1[0], .in__1_51_6=in_1[1], .in__1_52_6=in_1[2], .in__1_53_6=in_1[3], .in__1_54_6=in_1[4], .in__1_55_6=in_1[5], .in__1_56_6=in_1[6], .in__1_57_6=in_1[7], .in__0_50_6=in_0[0], .in__0_51_6=in_0[1], .in__0_52_6=in_0[2], .in__0_53_6=in_0[3], .in__0_54_6=in_0[4], .in__0_55_6=in_0[5], .in__0_56_6=in_0[6], .in__0_57_6=in_0[7], .out_50_6=out[0]);
+}
+
+/* -- declarations -- */
+export defproc blk_0i1e1i0q_1_8_8tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6);
+export defproc blk_0i1e1i0q_1_8_8 (bool? in_1[8]; bool? in_0[1]; bool! out[8]);
+
+export defproc blk_0i1e1i0q_1_8_8tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool? in__0_50_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6)
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   std::cells::AND2X1 g2;
+   std::cells::AND2X1 g0;
+   std::cells::AND2X1 g6;
+   std::cells::AND2X1 g5;
+   std::cells::AND2X1 g3;
+   std::cells::AND2X1 g7;
+   std::cells::AND2X1 g4;
+   std::cells::AND2X1 g1;
+   /*--- connections ---*/
+   g0(.A=in__1_50_6, .B=in__0_50_6, .Y=out_50_6);
+   g1(.A=in__1_51_6, .B=in__0_50_6, .Y=out_51_6);
+   g2(.A=in__1_52_6, .B=in__0_50_6, .Y=out_52_6);
+   g3(.A=in__1_53_6, .B=in__0_50_6, .Y=out_53_6);
+   g4(.A=in__1_54_6, .B=in__0_50_6, .Y=out_54_6);
+   g5(.A=in__1_55_6, .B=in__0_50_6, .Y=out_55_6);
+   g6(.A=in__1_56_6, .B=in__0_50_6, .Y=out_56_6);
+   g7(.A=in__1_57_6, .B=in__0_50_6, .Y=out_57_6);
+}
+
+export defproc blk_0i1e1i0q_1_8_8 (bool? in_1[8]; bool? in_0[1]; bool! out[8])
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   bool in__1_51_6;
+   bool in__1_57_6;
+   bool in__1_55_6;
+   blk_0i1e1i0q_1_8_8tmp _passthru_;
+   bool in__1_52_6;
+   bool out_56_6;
+   bool in__1_54_6;
+   bool in__1_50_6;
+   bool out_55_6;
+   bool out_50_6;
+   bool out_57_6;
+   bool in__0_50_6;
+   bool out_53_6;
+   bool out_51_6;
+   bool in__1_56_6;
+   bool out_54_6;
+   bool in__1_53_6;
+   bool out_52_6;
+   /*--- connections ---*/
+   _passthru_(.in__1_50_6=in_1[0], .in__1_51_6=in_1[1], .in__1_52_6=in_1[2], .in__1_53_6=in_1[3], .in__1_54_6=in_1[4], .in__1_55_6=in_1[5], .in__1_56_6=in_1[6], .in__1_57_6=in_1[7], .in__0_50_6=in_0[0], .out_50_6=out[0], .out_51_6=out[1], .out_52_6=out[2], .out_53_6=out[3], .out_54_6=out[4], .out_55_6=out[5], .out_56_6=out[6], .out_57_6=out[7]);
+}
+
+/* -- declarations -- */
+export defproc blk_0_1_1tmp (bool? in__0_50_6; bool! out_50_6);
+export defproc blk_0_1_1 (bool? in_0[1]; bool! out[1]);
+
+export defproc blk_0_1_1tmp (bool? in__0_50_6; bool! out_50_6)
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   std::cells::BUFX2 g0;
+   /*--- connections ---*/
+   g0(.A=in__0_50_6, .Y=out_50_6);
+}
+
+export defproc blk_0_1_1 (bool? in_0[1]; bool! out[1])
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   blk_0_1_1tmp _passthru_;
+   bool out_50_6;
+   bool in__0_50_6;
+   /*--- connections ---*/
+   _passthru_(.in__0_50_6=in_0[0], .out_50_6=out[0]);
+}
+
+}
+}

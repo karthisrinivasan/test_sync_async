@@ -1,0 +1,8 @@
+
+defproc tst (chan?(int<8>) A, B; chan!(int<8>) C)
+{
+    int<8> x,y;
+    chp {
+        *[ A?x , B?y; C!(x*y) ]
+    }
+}

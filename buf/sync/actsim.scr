@@ -1,0 +1,30 @@
+set rst 1
+set clk 0
+set Vdd 1
+set GND 0
+cycle
+
+set rst 0
+cycle
+
+watch buf_ready
+watch buf_valid
+watch src_valid
+watch src_ready
+
+set clk 1
+cycle
+set clk 0
+cycle
+set clk 1
+cycle
+set clk 0
+cycle
+set clk 1
+cycle
+set clk 0
+cycle
+set clk 1
+cycle
+set clk 0
+cycle

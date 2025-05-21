@@ -1,0 +1,60 @@
+namespace syn {
+
+export namespace expr {
+
+/* -- declarations -- */
+export defproc blk_1tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6);
+export defproc blk_1 (bool? in_1[8]; bool! out[8]);
+
+export defproc blk_1tmp (bool? in__1_50_6; bool? in__1_51_6; bool? in__1_52_6; bool? in__1_53_6; bool? in__1_54_6; bool? in__1_55_6; bool? in__1_56_6; bool? in__1_57_6; bool! out_50_6; bool! out_51_6; bool! out_52_6; bool! out_53_6; bool! out_54_6; bool! out_55_6; bool! out_56_6; bool! out_57_6)
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   std::cells::INVX1 g2;
+   std::cells::INVX1 g0;
+   std::cells::INVX1 g6;
+   std::cells::INVX1 g5;
+   std::cells::INVX1 g3;
+   std::cells::INVX1 g7;
+   std::cells::INVX1 g4;
+   std::cells::INVX1 g1;
+   /*--- connections ---*/
+   g0(.A=in__1_50_6, .Y=out_50_6);
+   g1(.A=in__1_51_6, .Y=out_51_6);
+   g2(.A=in__1_52_6, .Y=out_52_6);
+   g3(.A=in__1_53_6, .Y=out_53_6);
+   g4(.A=in__1_54_6, .Y=out_54_6);
+   g5(.A=in__1_55_6, .Y=out_55_6);
+   g6(.A=in__1_56_6, .Y=out_56_6);
+   g7(.A=in__1_57_6, .Y=out_57_6);
+}
+
+export defproc blk_1 (bool? in_1[8]; bool! out[8])
+{
+  spec { hazard(*) }
+
+   /*--- types ---*/
+   bool in__1_51_6;
+   bool in__1_57_6;
+   bool in__1_55_6;
+   blk_1tmp _passthru_;
+   bool in__1_52_6;
+   bool out_56_6;
+   bool in__1_54_6;
+   bool in__1_50_6;
+   bool out_55_6;
+   bool out_50_6;
+   bool out_57_6;
+   bool out_53_6;
+   bool out_51_6;
+   bool in__1_56_6;
+   bool out_54_6;
+   bool in__1_53_6;
+   bool out_52_6;
+   /*--- connections ---*/
+   _passthru_(.in__1_50_6=in_1[0], .in__1_51_6=in_1[1], .in__1_52_6=in_1[2], .in__1_53_6=in_1[3], .in__1_54_6=in_1[4], .in__1_55_6=in_1[5], .in__1_56_6=in_1[6], .in__1_57_6=in_1[7], .out_50_6=out[0], .out_51_6=out[1], .out_52_6=out[2], .out_53_6=out[3], .out_54_6=out[4], .out_55_6=out[5], .out_56_6=out[6], .out_57_6=out[7]);
+}
+
+}
+}
