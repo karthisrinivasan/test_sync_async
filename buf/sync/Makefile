@@ -6,6 +6,8 @@ v2act:
 	echo "import \"cells_sync.act\";\n\n" | cat - tmp.act > synth.act
 	rm tmp.act
 
-
 actsim:
 	actsim synth.act tb_buffer_with_source_sink < actsim.scr > actsim.out
+
+actsim_xyce:
+	actsim -Ttsmc65 -cnf=test.conf synth.act tb_buffer_with_source_sink < actsim.scr > actsim.out
