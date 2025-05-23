@@ -1,0 +1,76 @@
+import "cells_sync.act";
+
+
+defcell INVX1  <: stdgates::INVX1 () {}
+defcell BUFX2  <: stdgates::BUFX2 () {}
+defcell BUFX4  <: stdgates::BUFX4 () {}
+
+defcell NOR2X1 <: stdgates::NOR2X1 () {}
+defcell NOR3X1 <: stdgates::NOR3X1 () {}
+defcell OR2X1  <: stdgates::OR2X1 () {}
+defcell OR2X2  <: stdgates::OR2X2 () {}
+
+defcell NAND2X1 <: stdgates::NAND2X1 () {}
+defcell NAND3X1 <: stdgates::NAND3X1 () {}
+defcell AND2X1  <: stdgates::AND2X1 () {}
+defcell AND2X2  <: stdgates::AND2X2 () {}
+
+defcell XOR2X1  <: stdgates::XOR2X1 () {}
+defcell XNOR2X1 <: stdgates::XNOR2X1 () {}
+
+defcell MUX2X1 <: stdgates::MUX2X1 () {}
+
+defcell OAI21X1 <: stdgates::OAI21X1 () {}
+defcell AOI21X1 <: stdgates::AOI21X1 () {}
+defcell OAI22X1 <: stdgates::OAI22X1 () {}
+defcell AOI22X1 <: stdgates::AOI22X1 () {}
+
+defcell HAX1 <: stdgates::HAX1 () {}
+defcell FAX1 <: stdgates::FAX1 () {}
+
+defcell TBUF1 <: stdgates::TBUF1 () {}
+defcell TBUF2 <: stdgates::TBUF2 () {}
+
+defcell DFFPOSX1 <: stdgates::DFFPOSX1 () {}
+defcell DFFNEGX1 <: stdgates::DFFNEGX1 () {}
+defcell DFFSR <: stdgates::DFFSR () {}
+
+
+defproc characterize()
+{
+  INVX1 g1;  
+  BUFX2 g2;  
+  BUFX4 g3;  
+
+  NOR2X1 g4; 
+  NOR3X1 g5; 
+  OR2X1 g6;  
+  OR2X2 g7;  
+
+  NAND2X1 g8; 
+  NAND3X1 g9; 
+  AND2X1 g10;  
+  AND2X2 g11;  
+
+  XOR2X1 g12;  
+  XNOR2X1 g13; 
+
+  MUX2X1 g14; 
+
+  OAI21X1 g15; 
+  AOI21X1 g16; 
+  OAI22X1 g17; 
+  AOI22X1 g18; 
+
+  HAX1 g19; 
+  FAX1 g20; 
+
+  TBUF1 g21; 
+  TBUF2 g22; 
+
+  DFFPOSX1 g23; 
+  DFFNEGX1 g24; 
+  DFFSR g25;
+}
+
+characterize c;

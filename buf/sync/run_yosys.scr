@@ -6,8 +6,12 @@ read_verilog tb.v
 # hierarchy -check -top tb_buffer_with_source_sink
 
 synth
-dfflibmap -liberty osu018_stdcells.lib
-abc -liberty osu018_stdcells.lib
+# dfflibmap -liberty osu018_stdcells.lib
+dfflibmap -liberty ../../char/out.lib
+
+# abc -liberty osu018_stdcells.lib
+abc -liberty ../../char/out.lib
+
 opt_clean
 
 # stat -liberty cmos_cells.lib
